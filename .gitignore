@@ -21,3 +21,6 @@
 Homestead.json
 Homestead.yaml
 Thumbs.db
+
+# Jangan ignore folder public uploads
+!/storage/app/public
