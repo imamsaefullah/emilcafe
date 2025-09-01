@@ -337,8 +337,8 @@
         <div class="col-md-4">
             <h3>Alamat</h3>
             <div class="contact-item">
-                <p>Jalan Mawar No. 123</p>
-                <p>Jakarta Selatan, 12345</p>
+                <p>Pengampelan, Kec. Walantaka</p>
+                <p>Kota Serang, Banten 42183</p>
             </div>
         </div>
         <div class="col-md-4">
@@ -387,8 +387,8 @@
 <div id="footer">
     <div class="container text-center">
         <div class="col-md-6">
-            <p>&copy; 2025 RasaNusantara. Seluruh hak cipta dilindungi. Desain oleh <a
-                    href="http://www.templatewire.com" rel="nofollow">TemplateWire</a></p>
+            <p>&copy; Desain oleh Evi Anggita <a
+                    href="#" rel="nofollow"></a></p>
         </div>
         <div class="col-md-6">
             <div class="social">
