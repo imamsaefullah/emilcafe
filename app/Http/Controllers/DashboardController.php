@@ -97,6 +97,15 @@ class DashboardController
             $monthSessions[] = $data ? $data->orders : 0;
         }
 
+        $allorder = Transaction::whereBetween('created_at', [[now()->startOfWeek(), now()->endOfWeek()]])->where('status', 'selesai')->count();
+
+        $transactions = Transaction::latest()->take(10)->get();
+
+        // get transction last 7 days form database
+        $weekIncome = Transaction::whereBetween('created_at', [now()->startOfWeek(), now()->endOfWeek()])
+            ->where('status', 'selesai') // kalau mau filter status
+            ->sum('total');
+
         return view('dashboard.index', compact(
             'totalSekarang',
             'totalSemua',
@@ -114,6 +123,9 @@ class DashboardController
             'monthVisitors',
             'monthSessions',
             'monthLabels',
+            'transactions',
+            'weekIncome',
+            'allorder'
         ));
     }
 
