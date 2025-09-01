@@ -16,12 +16,12 @@
     <!-- [Feather Icons] https://feathericons.com -->
     <link rel="stylesheet" href="{{ asset('assets/fonts/feather.css') }}" >
     <!-- [Font Awesome Icons] https://fontawesome.com/icons -->
-    <link rel="stylesheet" href="{{asset('assets/fonts/fontawesome.css')}}" >
+    <link rel="stylesheet" href="{{ asset('assets/fonts/fontawesome.css') }}" >
     <!-- [Material Icons] https://fonts.google.com/icons -->
-    <link rel="stylesheet" href="{{asset('assets/fonts/material.css')}}" >
+    <link rel="stylesheet" href="{{ asset('assets/fonts/material.css') }}" >
     <!-- [Template CSS Files] -->
     <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}" id="main-style-link" >
-    <link rel="stylesheet" href="{{asset('assets/css/style-preset.css')}}" >
+    <link rel="stylesheet" href="{{ asset('assets/css/style-preset.css') }}">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
     <!-- Flatpickr CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
@@ -75,7 +75,6 @@
             border-color: #a7f3d0;
         }
     </style>
-
 </head>
 
 

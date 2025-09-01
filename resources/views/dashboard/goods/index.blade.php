@@ -2,6 +2,15 @@
 
 @section('content')
     <div class="pc-content">
+
+        {{-- Notifikasi sukses --}}
+        @if (session('success'))
+            <div class="alert alert-success alert-dismissible fade show" role="alert">
+                {{ session('success') }}
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+        @endif
+
         <div class="d-flex justify-content-between align-items-center mb-3">
             <h4>Daftar Barang</h4>
             <a href="{{ route('goods.create') }}" class="btn btn-primary btn-sm">+ Tambah Barang</a>
@@ -41,3 +50,15 @@
         </div>
     </div>
 @endsection
+@if (session('success'))
+    <script>
+        Swal.fire({
+            icon: 'success',
+            title: 'Sukses!',
+            text: "{{ session('success') }}",
+            timer: 2000,
+            showConfirmButton: false
+        });
+    </script>
+@endif
+
